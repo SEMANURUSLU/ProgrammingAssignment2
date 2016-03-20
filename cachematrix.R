@@ -49,8 +49,7 @@
      ## Get the matrix from the object
      data <- x$get()
  
-     ## Calculate the inverse using matrix mult.
-     m <- solve(data) %*% data
+     m <- solve(data)
  
      ## Set the inverse to the object
      x$setInv(m)
